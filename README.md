@@ -2,9 +2,13 @@
 
  Implementação de teste automatizado da Cubos usando Cypress. 
  
+
+ ### Instruções:
+ 
+
  ### Planos:
  
- - Casos de teste visit
+ - Casos de teste p/ visit
     - Visitar o site 
 
  - Casos de teste Login
