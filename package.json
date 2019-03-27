@@ -4,7 +4,7 @@
   "description": "Implementação de teste automatizado da Cubos usando Cypress.",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
+    "cypress": "cypress open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

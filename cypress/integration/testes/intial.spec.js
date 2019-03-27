@@ -3,15 +3,15 @@
 describe ("Initial Teste", () =>{
 
     it("Visita o site", () => {
-            cy.visit('https://dev-maxima-internetbanking.bbnk.cubos.io/login');
+            cy.visit('http://endenreço');
     });
 
     it("Login válido",() => {
 
-        cy.visit('https://dev-maxima-internetbanking.bbnk.cubos.io/login');
+        cy.visit('http://endenreço');
 
         cy.get('.sc-gtXRHa > :nth-child(3) > .sc-iqzUVk')
-        .type('04634517590')
+        .type('cpf')
         // cy.screenshot('teste');
 
         cy.get(':nth-child(5) > .sc-iqzUVk').type('170593');
@@ -24,7 +24,7 @@ describe ("Initial Teste", () =>{
 
     it("Login com campo em branco",() => {
 
-        cy.visit('https://dev-maxima-internetbanking.bbnk.cubos.io/login');
+        cy.visit('http://endenreço');
 
         cy.get('.sc-gtXRHa > :nth-child(3) > .sc-iqzUVk')
         .type(' ')
@@ -39,13 +39,13 @@ describe ("Initial Teste", () =>{
     });
     it("Login dados  inválido",() => {
 
-        cy.visit('https://dev-maxima-internetbanking.bbnk.cubos.io/login');
+        cy.visit('http://endenreço');
 
         cy.get('.sc-gtXRHa > :nth-child(3) > .sc-iqzUVk')
         .type('0463432')
         // cy.screenshot('teste');
 
-        cy.get(':nth-child(5) > .sc-iqzUVk').type('170593');
+        cy.get(':nth-child(5) > .sc-iqzUVk').type('');
         // cy.screenshot('login');
 
         cy.get('.sc-esOvli').click();
@@ -56,12 +56,12 @@ describe ("Initial Teste", () =>{
     it("Login incorreto",() => {
 
 
-        cy.visit('https://dev-maxima-internetbanking.bbnk.cubos.io/login');
+        cy.visit('...');
         cy.get('.sc-gtXRHa > :nth-child(3) > .sc-iqzUVk')
-        .type('04634517591')
+        .type('cpf')
         // cy.screenshot('teste');
 
-        cy.get(':nth-child(5) > .sc-iqzUVk').type('170593');
+        cy.get(':nth-child(5) > .sc-iqzUVk').type('senha');
         cy.get('.sc-esOvli').click();
         cy.get('.sc-jVODtj').should('contain', 'CPF inválido');
 
