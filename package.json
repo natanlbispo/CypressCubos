@@ -1,0 +1,24 @@
+{
+  "name": "CypressCubos",
+  "version": "1.0.0",
+  "description": "Implementação de teste automatizado da Cubos usando Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natanlbispo/CypressCubos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natanlbispo/CypressCubos/issues"
+  },
+  "homepage": "https://github.com/natanlbispo/CypressCubos#readme",
+  "devDependencies": {
+    "cypress": "^3.2.0"
+  }
+}
