@@ -4,6 +4,9 @@
  
  ### Planos:
  
+ - Casos de teste visit
+    - Visitar o site 
+
  - Casos de teste Login
     - Login Correto
     - Login com campo email/cpf em branco e senha preenchida
